@@ -1,0 +1,60 @@
+<div style="width: 700px; margin: 0 auto; padding-bottom: 30px;">
+  <h1>Good Ratings</h1>
+  <table>
+    <col width="120">
+    <col width="200">
+    <col width="80">
+    <col width="80">
+    <col width="80">
+    <col width="80">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Design</th>
+      <th>Content</th>
+      <th>Speed</th>
+      <th>Overall</th>
+    </tr>
+    
+    <% @good_ratings.each do |rate| %>
+    
+      <tr>
+        <td><%= rate.name %></td> <!-- =sign  -->
+        <td><%= rate.email %></td>
+        <td><%= rate.design %></td>
+        <td><%= rate.content %></td>
+        <td><%= rate.speed %></td>
+        <td><%= rate.overall %></td>
+      <tr>
+    <% end %>
+  </table>
+
+  <h1>Bad Ratings</h1>
+  <table>
+    <col width="120">
+    <col width="200">
+    <col width="80">
+    <col width="80">
+    <col width="80">
+    <col width="80">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Design</th>
+      <th>Content</th>
+      <th>Speed</th>
+      <th>Overall</th>
+    </tr>
+    
+    <% @bad_ratings.each do |rate| %>
+    
+      <tr>
+        <td><%= rate.name %></td> <!-- =sign  -->
+        <td><%= rate.email %></td>
+        <td><%= rate.design %></td>
+        <td><%= rate.content %></td>
+        <td><%= rate.speed %></td>
+        <td><%= rate.overall %></td>
+      <tr>
+    <% end %>
+</div>
